@@ -1,0 +1,77 @@
+.add{
+    width: 70%;
+    margin-left: max(5vw,25px);
+    margin-top: 50px;
+    color: #6d6d6d;
+    font-size: 16px;
+}
+
+form {
+    gap: 20px;
+}
+
+.add-img-upload img {
+    width: 120px;
+}
+
+.add-product-name, .add-product-description {
+    width: max(40%,280px);
+}
+
+.add-product-name input, .add-product-description textarea{
+    padding: 10px;
+    outline: none;
+}
+
+.add-category-price {
+    display: flex;
+    gap: 30px;
+}
+
+.add-category-price select, .add-category-price input {
+    max-width: 120px;
+    padding: 10px;
+}
+
+select {
+    background-color: #f0f0f0; /* Background color */
+    color: #333; /* Text color */
+    /* Padding inside the select box */
+    border: 1px solid #ccc; /* Border around the select box */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    /* Width of the select box */
+    appearance: none; /* Removes default arrow */
+    -webkit-appearance: none; /* For Safari */
+    -moz-appearance: none; /* For Firefox */
+}
+
+option {
+    background-color: #f8f8f8; /* Background color */
+    color: #333; /* Text color */
+    font-size: 16px; /* Font size */
+    padding: 5px; /* Padding inside each option */
+}
+
+select {
+    background: #f0f0f0 url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgMTUuMjhsLTYuMzYtNi4zNWEuOTIuOTIgMCAwMS4wNi0xLjMxbC40OC0uNDhhLjkzLjkzIDAgMDEuNjIuMjVsNS4xNCA1LjE0IDUuMTQtNS4xNGEuOTMuOTMgMCAwMS42Mi0uMjVsLjQ4LjQ4YS45Mi45MiAwIDAxLjA2IDEuMzFsLTYuMzYgNi4zNWEuOTMuOTMgMCAwMS0xLjMyIDB6Ij48L3BhdGg+PC9zdmc+') no-repeat right 10px center;
+    background-size: 12px;
+}
+
+
+
+
+
+.add-btn {
+    max-width: 120px;
+    border: none;
+    padding: 10px;
+    background-color:black;
+    color: white;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.add-btn:hover {
+    background-color: tomato;
+}
