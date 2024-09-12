@@ -3,6 +3,10 @@ import cors from 'cors'
 import dotenv from 'dotenv'
 import mongoose from 'mongoose'
 import foodRouter from './routes/foodRouter.js'
+import userRouter from './routes/userRoutes.js'
+import 'dotenv/config'
+import cartRouter from './routes/cartRouter.js'
+import orderRouter from './routes/orderRoute.js'
 
 dotenv.config()
 
@@ -29,12 +33,17 @@ mongoose.connect(process.env.MONGODB_URI)
         console.log(`Server Running on ${PORT} `)
     })
 })
-.catch(()=>{
-    console.log("Failed to connect to mongodb")
+.catch((error)=>{
+    console.log("Failed to connect to mongodb "+ error.message)
 })
 
 //api endpoints
 
 app.use('/api/food', foodRouter)
 app.use("/images",express.static('uploads'))
+
+app.use("/api/user", userRouter)
+app.use("/api/cart",cartRouter)
+app.use("/api/order", orderRouter)
+
 

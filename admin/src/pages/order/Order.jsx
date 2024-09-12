@@ -1,6 +1,6 @@
  import './order.css'
 
-const Order = () => {
+const Order = ({url}) => {
   return <div>Order</div>;
 };
 

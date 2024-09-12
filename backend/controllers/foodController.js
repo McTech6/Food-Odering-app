@@ -36,10 +36,11 @@ export const listFood =async(req,res)=>{
     try {
 
         const foods =await FoodModel.find({});
+        console.log("successfully loaded items")
         res.status(200).json({success:true,foods:foods});
         
     } catch (error) {
-        console.log( error)
+        console.log("Network " + error)
         res.status(500).json({success:false, msg: "Server Error"});
     }
 }
